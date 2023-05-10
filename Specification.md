@@ -28,24 +28,24 @@ Opis: Reprezentuje dochód i zawiera następujące pola:
    - Parametry:
      - `expense` (Expense): Obiekt reprezentujący wydatek.
      - `income` (Income): Obiekt reprezentujący dochód.
-     - 'category' (string): Kategoria lub typ wydatku lub dochodu (np. jedzenie, rozrywka, pensja).
-     - 'amount' (float): Kwota wydatku lub dochodu.
+     - `category` (string): Kategoria lub typ wydatku lub dochodu (np. jedzenie, rozrywka, pensja).
+     - `amount` (float): Kwota wydatku lub dochodu.
    - Opis: Dodaje nowy wydatek lub dochód do budżetu.
 
 2. Edytuj wydatek lub dochód:
    - Parametry:
      - `expense` (Expense): Obiekt reprezentujący wydatek.
      - `income` (Income): Obiekt reprezentujący dochód.
-     - 'category' (string): Kategoria lub typ wydatku lub dochodu (np. jedzenie, rozrywka, pensja).
-     - 'amount' (float): Kwota wydatku lub dochodu.
+     - `category` (string): Kategoria lub typ wydatku lub dochodu (np. jedzenie, rozrywka, pensja).
+     - `amount` (float): Kwota wydatku lub dochodu.
    - Opis: Edytuje istniejący wydatek lub dochód w budżecie.
 
 3. Usuń wydatek lub dochód:
    - Parametry:
      - `expense` (Expense): Obiekt reprezentujący wydatek.
      - `income` (Income): Obiekt reprezentujący dochód.
-     - 'category' (string): Kategoria lub typ wydatku lub dochodu (np. jedzenie, rozrywka, pensja).
-      - 'amount' (float): Kwota wydatku lub dochodu.
+     - `category` (string): Kategoria lub typ wydatku lub dochodu (np. jedzenie, rozrywka, pensja).
+      - `amount` (float): Kwota wydatku lub dochodu.
    - Opis: Usuwa wydatek lub dochód z budżetu.
 
 4. Przeglądaj budżet:
