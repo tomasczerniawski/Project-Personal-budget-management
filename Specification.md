@@ -57,8 +57,8 @@ Opis: Reprezentuje dochód i zawiera następujące pola:
    - Opis: Wysyła powiadomienia użytkownikowi o planowanych wydatkach w określonym czasie lub dniu.
 
 8. Zapisywanie celów finansowych:
-- Parametry:
-  -goal (string): Opis celu finansowego.
-  - amount (float): Kwota celu finansowego.
-- Opis: Zapisuje cel finansowy, który użytkownik chce osiągnąć, wraz z określoną kwotą. Cel finansowy może dotyczyć oszczędzania na konkretny cel, np. wakacje, samochód, czy też spłaty długu. Ta funkcja umożliwia śledzenie postępu w osiąganiu celu finansowego.
+  - Parametry:
+   - `goal` (string): Opis celu finansowego.
+  - `amount` (float): Kwota celu finansowego.
+ - Opis: Zapisuje cel finansowy, który użytkownik chce osiągnąć, wraz z określoną kwotą. Cel finansowy może dotyczyć oszczędzania na konkretny cel, np. wakacje, samochód, czy też spłaty długu. Ta funkcja umożliwia śledzenie postępu w osiąganiu celu finansowego.
   
