@@ -9,7 +9,7 @@ Projekt ma na celu pomóc użytkownikom w zarządzaniu swoim budżetem osobistym
 Opis: Reprezentuje wydatek i zawiera następujące pola:
 
 - `name` (string): Nazwa lub opis wydatku.
-- `category` (string): Kategoria lub typ wydatku (np. jedzenie, rozrywka, pensja).
+- `expense_id` (int): numer identyfikacji.
 - `amount` (float): Kwota wydatku.
 - `date` (string): Data wydatku w formacie YYYY-MM-DD.
 
