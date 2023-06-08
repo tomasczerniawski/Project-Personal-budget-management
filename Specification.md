@@ -124,24 +124,30 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
 
   
   # Algorytmy i struktury danych które będą używane w projekcie
-  
-  W pliku BinaryTree.h została zaimplementowana struktura danych drzewa binarnego (Binary Tree) oraz odpowiednie algorytmy operujące na tej strukturze.
 
-Struktura danych:
+W pliku BinaryTree.h została zaimplementowana struktura danych drzewa binarnego (Binary Tree) oraz odpowiednie algorytmy operujące na tej strukturze.
 
-BinaryTreeNode: Klasa reprezentująca węzeł drzewa binarnego. Posiada trzy pola: data przechowujące wartość węzła, oraz wskaźniki left i right wskazujące na lewe i prawe poddrzewo.
+## Struktura danych
 
-BinaryTree: Klasa reprezentująca drzewo binarne. Posiada pole root, które wskazuje na korzeń drzewa. Klasa udostępnia metody do wstawiania węzłów, przeprowadzania in-order traversal (przechodzenia drzewa w porządku rosnącym) oraz wyszukiwania węzłów na podstawie podanego słowa kluczowego.
+### BinaryTreeNode
+Klasa `BinaryTreeNode` reprezentuje węzeł drzewa binarnego. Posiada trzy pola: `data`, przechowujące wartość węzła, oraz wskaźniki `left` i `right`, wskazujące na lewe i prawe poddrzewo.
 
-Algorytmy:
+### BinaryTree
+Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole `root`, które wskazuje na korzeń drzewa. Klasa udostępnia metody do wstawiania węzłów, przeprowadzania in-order traversal (przechodzenia drzewa w porządku rosnącym) oraz wyszukiwania węzłów na podstawie podanego słowa kluczowego.
 
-insertRecursive: Algorytm rekurencyjny do wstawiania węzłów do drzewa binarnego. Wyszukuje odpowiednie miejsce w drzewie, aby wstawić nowy węzeł na podstawie wartości klucza. Jeśli węzeł jest mniejszy od bieżącego węzła, zostaje wstawiony do lewego poddrzewa; w przeciwnym razie zostaje wstawiony do prawego poddrzewa.
+## Algorytmy
 
-inOrderTraversalRecursive: Algorytm rekurencyjny do in-order traversal drzewa binarnego. Przechodzi przez drzewo w porządku rosnącym, odwiedzając najpierw lewe poddrzewo, następnie bieżący węzeł i na koniec prawe poddrzewo. W tym przypadku, wartość opisująca węzeł jest wypisywana na standardowym wyjściu.
+### insertRecursive
+Metoda `insertRecursive` to algorytm rekurencyjny do wstawiania węzłów do drzewa binarnego. Wyszukuje odpowiednie miejsce w drzewie, aby wstawić nowy węzeł na podstawie wartości klucza. Jeśli węzeł jest mniejszy od bieżącego węzła, zostaje wstawiony do lewego poddrzewa; w przeciwnym razie zostaje wstawiony do prawego poddrzewa.
 
-searchRecursive: Algorytm rekurencyjny do wyszukiwania węzłów w drzewie binarnym na podstawie podanego słowa kluczowego. Przeszukuje drzewo, porównując opisy węzłów z podanym słowem kluczowym. Jeśli węzeł jest znaleziony, zostaje zwrócony. W przeciwnym razie, algorytm rekurencyjnie przeszukuje lewe i prawe poddrzewo.
+### inOrderTraversalRecursive
+Metoda `inOrderTraversalRecursive` to algorytm rekurencyjny do in-order traversal drzewa binarnego. Przechodzi przez drzewo w porządku rosnącym, odwiedzając najpierw lewe poddrzewo, następnie bieżący węzeł i na koniec prawe poddrzewo. W tym przypadku, wartość opisująca węzeł jest wypisywana na standardowym wyjściu.
 
-Te algorytmy i struktury danych są używane w projekcie do obsługi drzewa binarnego, w którym przechowywane są dane dotyczące wydatków i przychodów. Drzewo binarne umożliwia efektywne dodawanie nowych węzłów, przeglądanie węzłów w określonym porządku oraz wyszukiwanie węzłów na podstawie opisu.
+### searchRecursive
+Metoda `searchRecursive` to algorytm rekurencyjny do wyszukiwania węzłów w drzewie binarnym na podstawie podanego słowa kluczowego. Przeszukuje drzewo, porównując opisy węzłów z podanym słowem kluczowym. Jeśli węzeł jest znaleziony, zostaje zwrócony. W przeciwnym razie, algorytm rekurencyjnie przeszukuje lewe i prawe poddrzewo.
+
+Te algorytmy i struktury danych umożliwiają efektywne dodawanie nowych węzłów do drzewa binarnego, przeglądanie węzłów w określonym porządku oraz wyszukiwanie węzłów na podstawie podanego słowa kluczowego. Są one używane w projekcie do manipulacji danymi dotyczącymi wydatków i przychodów.
+
   
   
   
