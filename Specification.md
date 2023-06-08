@@ -68,36 +68,39 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
   
 :page_facing_up:  **Budget.cpp:** Plik źródłowy zawierający implementację klasy Budget.
 
-:page_facing_up: Budget.h: Plik nagłówkowy zawierający deklarację klasy Budget.
+:page_facing_up: **Budget.h:** Plik nagłówkowy zawierający deklarację klasy Budget.
 
 :page_facing_up: `Date.cpp`: Plik źródłowy zawierający implementację klasy Date.
   
 :page_facing_up: `Date.h`: Plik nagłówkowy zawierający deklarację klasy Date.
 
-:page_facing_up: Expense.cpp: Plik źródłowy zawierający implementację klasy Expense.
+:page_facing_up: **Expense.cpp:** Plik źródłowy zawierający implementację klasy Expense.
   
-:page_facing_up: Expense.h: Plik nagłówkowy zawierający deklarację klasy Expense.
+:page_facing_up: **Expense.h:** Plik nagłówkowy zawierający deklarację klasy Expense.
 
 :page_facing_up: `ExpensesFile.cpp`: Plik źródłowy zawierający implementację klasy ExpensesFile.
   
 :page_facing_up: `ExpensesFile.h`: Plik nagłówkowy zawierający deklarację klasy ExpensesFile.
 
-:page_facing_up: Finance.cpp: Plik źródłowy zawierający implementację klasy Finance.
+:page_facing_up: **Finance.cpp:** Plik źródłowy zawierający implementację klasy Finance.
   
-:page_facing_up: Finance.h: Plik nagłówkowy zawierający deklarację klasy Finance.
+:page_facing_up: **Finance.h:** Plik nagłówkowy zawierający deklarację klasy Finance.
 
 :page_facing_up: `FinanceManager.cpp`: Plik źródłowy zawierający implementację klasy FinanceManager.
   
 :page_facing_up: `FinanceManager.h`: Plik nagłówkowy zawierający deklarację klasy FinanceManager.
 
-- `Income.cpp`: Plik źródłowy zawierający implementację klasy Income.
-- `Income.h`: Plik nagłówkowy zawierający deklarację klasy Income.
+:page_facing_up:  Income.cpp: Plik źródłowy zawierający implementację klasy Income.
+  
+:page_facing_up:  Income.h: Plik nagłówkowy zawierający deklarację klasy Income.
 
-- `IncomesFile.cpp`: Plik źródłowy zawierający implementację klasy IncomesFile.
-- `IncomesFile.h`: Plik nagłówkowy zawierający deklarację klasy IncomesFile.
+:page_facing_up:  `IncomesFile.cpp`: Plik źródłowy zawierający implementację klasy IncomesFile.
+  
+:page_facing_up:  `IncomesFile.h`: Plik nagłówkowy zawierający deklarację klasy IncomesFile.
 
-- `Markup.cpp`: Plik źródłowy zawierający implementację klasy Markup.
-- `Markup.h`: Plik nagłówkowy zawierający deklarację klasy Markup.
+:page_facing_up:  Markup.cpp: Plik źródłowy zawierający implementację klasy Markup.
+  
+:page_facing_up:  Markup.h: Plik nagłówkowy zawierający deklarację klasy Markup.
 
 - `User.cpp`: Plik źródłowy zawierający implementację klasy User.
 - `User.h`: Plik nagłówkowy zawierający deklarację klasy User.
