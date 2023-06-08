@@ -16,7 +16,8 @@ Kwota - kwota wydatku lub dochodu
 Data - data wydatku lub dochodu
 
 
-**Funkcje programu:**
+## Funkcje programu:
+
 **1. Dodawanie wydatków i dochodów:** Możesz dodawać nowe wydatki i dochód, wprowadzając odpowiednie dane w formularzu.
 
 **2. Przepatrywanie dochodów i wydatków po kategoryjach sortowania.**
