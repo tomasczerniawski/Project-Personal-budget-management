@@ -2,8 +2,6 @@
 
 Projekt ma na celu pomóc użytkownikom w zarządzaniu swoim budżetem osobistym. Projekt będzie zawierał funkcje, takie jak dodawanie, edytowanie i usuwanie wydatków i dochodów oraz umożliwi użytkownikom śledzenie swojego budżetu i generowanie raportów.
 
-## Schematy
-
 ## Opisanie struktur
 
 ### BinaryTreeNode<T>
