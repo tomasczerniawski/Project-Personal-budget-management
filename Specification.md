@@ -52,7 +52,61 @@ W powyższych strukturach używane są następujące typy parametrów:
   Biorąc pod uwagę te czynniki, C++ jest dobrym wyborem do projektu zarządzania finansami.
   
   
-  
+  # Opis Struktury (Organizacja katalogowa) i Nazwy Plików
+
+W projekcie Finansowy zastosowano następującą strukturę organizacyjną katalogów i nazw plików:
+
+## Katalog główny i jedyny
+
+- `src/`: Katalog zawierający pliki źródłowe projektu.
+
+## Katalog src/
+
+- `AdjuvantMethods.cpp`: Plik źródłowy zawierający pomocnicze metody.
+- `AdjuvantMethods.h`: Plik nagłówkowy zawierający deklaracje pomocniczych metod.
+
+- `Budget.cpp`: Plik źródłowy zawierający implementację klasy Budget.
+- `Budget.h`: Plik nagłówkowy zawierający deklarację klasy Budget.
+
+- `Date.cpp`: Plik źródłowy zawierający implementację klasy Date.
+- `Date.h`: Plik nagłówkowy zawierający deklarację klasy Date.
+
+- `Expense.cpp`: Plik źródłowy zawierający implementację klasy Expense.
+- `Expense.h`: Plik nagłówkowy zawierający deklarację klasy Expense.
+
+- `ExpensesFile.cpp`: Plik źródłowy zawierający implementację klasy ExpensesFile.
+- `ExpensesFile.h`: Plik nagłówkowy zawierający deklarację klasy ExpensesFile.
+
+- `Finance.cpp`: Plik źródłowy zawierający implementację klasy Finance.
+- `Finance.h`: Plik nagłówkowy zawierający deklarację klasy Finance.
+
+- `FinanceManager.cpp`: Plik źródłowy zawierający implementację klasy FinanceManager.
+- `FinanceManager.h`: Plik nagłówkowy zawierający deklarację klasy FinanceManager.
+
+- `Income.cpp`: Plik źródłowy zawierający implementację klasy Income.
+- `Income.h`: Plik nagłówkowy zawierający deklarację klasy Income.
+
+- `IncomesFile.cpp`: Plik źródłowy zawierający implementację klasy IncomesFile.
+- `IncomesFile.h`: Plik nagłówkowy zawierający deklarację klasy IncomesFile.
+
+- `Markup.cpp`: Plik źródłowy zawierający implementację klasy Markup.
+- `Markup.h`: Plik nagłówkowy zawierający deklarację klasy Markup.
+
+- `User.cpp`: Plik źródłowy zawierający implementację klasy User.
+- `User.h`: Plik nagłówkowy zawierający deklarację klasy User.
+
+- `UserManager.cpp`: Plik źródłowy zawierający implementację klasy UserManager.
+- `UserManager.h`: Plik nagłówkowy zawierający deklarację klasy UserManager.
+
+- `UsersFile.cpp`: Plik źródłowy zawierający implementację klasy UsersFile.
+- `UsersFile.h`: Plik nagłówkowy zawierający deklarację klasy UsersFile.
+
+- `XmlFile.cpp`: Plik źródłowy zawierający implementację klasy XmlFile.
+- `XmlFile.h`: Plik nagłówkowy zawierający deklarację klasy XmlFile.
+
+- `main.cpp`: Plik źródłowy zawierający funkcję main().
+- `Specification.md`: Plik zawierający specyfikację projektu, w tym opis struktury organizacyjnej katalogów i nazw plików.
+
   
   
   
