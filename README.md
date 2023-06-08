@@ -29,7 +29,31 @@ Data - data wydatku lub dochodu
 
 **7. Zapisywanie celów finansowych:** użytkownicy będą mieli możliwość zapisywania swoich celów finansowych, takich jak zaoszczędzenie określonej kwoty lub spłata długu. Funkcja ta umożliwi użytkownikom monitorowanie postępu realizacji swoich celów i motywowanie ich do oszczędzania.
 
+**Funkcje programu:**
+**1. Dodawanie wydatków i dochów: Możesz dodawać nowe wydatki i dochód, wprowadzając odpowiednie dane w formularzu.
 
+**2. Przepatrywanie dochodów i wydatków po kategoryjach sortowania.
+
+**3. Przeglądanie budżetu w obecnym miesiącu: Możesz przeglądać listę wszystkich wydatków i przychodów w budżecie, wyświetlając podstawowe informacje, takie jak nazwa, kwota i data.
+
+**4. Przeglądanie budżetu w wybranym miesiącu: Możesz przeglądać listę wszystkich wydatków i przychodów w budżecie, wyświetlając podstawowe informacje, takie jak nazwa, kwota i data.
+
+**4. Wyszukiwanie w budżecie: Istnieje możliwość przeszukiwania budżetu osobistego według słowa kluczowego.
+
+**5. Generowanie raportów: Możesz generować różne raporty dotyczące budżetu osobistego, generuje grafy o wydatkach i dochodach w jakim i wiele bylo wtym miesięcu.
+
+
+**7. Zapisywanie celów finansowych: Możesz zapisywać swoje cele finansowe, takie jak zaoszczędzenie określonej kwoty lub spłata długu. Funkcja ta pomaga śledzić postęp w realizacji celów i motywuje do oszczędzania.
+
+# Uruchamianie programu:
+Sklonuj repozytorium na swoje urządzenie.
+
+Skompiluj program za pomocą wybranego kompilatora.
+
+Uruchom program i zacznij zarządzać swoim budżetem osobistym!
+
+**Autorzy:**
+Ten projekt został opracowany przez Tomas Czerniawski.
 
 Projekt będzie oparty na prostym interfejsie użytkownika, który umożliwi łatwe i intuicyjne korzystanie z wszystkich funkcji.
 
