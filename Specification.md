@@ -115,6 +115,7 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
 :page_facing_up:  `UsersFile.h`: Plik nagłówkowy zawierający deklarację klasy UsersFile.
 
 :scroll: **XmlFile.cpp**: Plik źródłowy zawierający implementację klasy XmlFile.
+  
 :scroll: **XmlFile.**`: Plik nagłówkowy zawierający deklarację klasy XmlFile.
 
 :page_facing_up:  `main.cpp`: Plik źródłowy zawierający funkcję main().
