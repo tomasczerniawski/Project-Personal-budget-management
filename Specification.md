@@ -82,39 +82,42 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
   
 :page_facing_up: `ExpensesFile.h`: Plik nagłówkowy zawierający deklarację klasy ExpensesFile.
 
-:page_facing_up: **Finance.cpp:** Plik źródłowy zawierający implementację klasy Finance.
+:scroll: **Finance.cpp:** Plik źródłowy zawierający implementację klasy Finance.
   
-:page_facing_up: **Finance.h:** Plik nagłówkowy zawierający deklarację klasy Finance.
+:scroll: **Finance.h:** Plik nagłówkowy zawierający deklarację klasy Finance.
 
 :page_facing_up: `FinanceManager.cpp`: Plik źródłowy zawierający implementację klasy FinanceManager.
   
 :page_facing_up: `FinanceManager.h`: Plik nagłówkowy zawierający deklarację klasy FinanceManager.
 
-:page_facing_up:  Income.cpp: Plik źródłowy zawierający implementację klasy Income.
+:scroll:  **Income.cpp:** Plik źródłowy zawierający implementację klasy Income.
   
-:page_facing_up:  Income.h: Plik nagłówkowy zawierający deklarację klasy Income.
+:scroll:  **Income.h:** Plik nagłówkowy zawierający deklarację klasy Income.
 
 :page_facing_up:  `IncomesFile.cpp`: Plik źródłowy zawierający implementację klasy IncomesFile.
   
 :page_facing_up:  `IncomesFile.h`: Plik nagłówkowy zawierający deklarację klasy IncomesFile.
 
-:page_facing_up:  Markup.cpp: Plik źródłowy zawierający implementację klasy Markup.
+:scroll:  **Markup.cpp:** Plik źródłowy zawierający implementację klasy Markup.
   
-:page_facing_up:  Markup.h: Plik nagłówkowy zawierający deklarację klasy Markup.
+:scroll:  **Markup.h:** Plik nagłówkowy zawierający deklarację klasy Markup.
 
-- `User.cpp`: Plik źródłowy zawierający implementację klasy User.
-- `User.h`: Plik nagłówkowy zawierający deklarację klasy User.
+:page_facing_up:  `User.cpp`: Plik źródłowy zawierający implementację klasy User.
+  
+:page_facing_up:  `User.h`: Plik nagłówkowy zawierający deklarację klasy User.
 
-- `UserManager.cpp`: Plik źródłowy zawierający implementację klasy UserManager.
-- `UserManager.h`: Plik nagłówkowy zawierający deklarację klasy UserManager.
+:scroll: **UserManager.cpp**: Plik źródłowy zawierający implementację klasy UserManager.
+  
+:scroll: **UserManager.h**: Plik nagłówkowy zawierający deklarację klasy UserManager.
 
-- `UsersFile.cpp`: Plik źródłowy zawierający implementację klasy UsersFile.
-- `UsersFile.h`: Plik nagłówkowy zawierający deklarację klasy UsersFile.
+:page_facing_up:  `UsersFile.cpp`: Plik źródłowy zawierający implementację klasy UsersFile.
+  
+:page_facing_up:  `UsersFile.h`: Plik nagłówkowy zawierający deklarację klasy UsersFile.
 
-- `XmlFile.cpp`: Plik źródłowy zawierający implementację klasy XmlFile.
-- `XmlFile.h`: Plik nagłówkowy zawierający deklarację klasy XmlFile.
+:scroll: **XmlFile.cpp**: Plik źródłowy zawierający implementację klasy XmlFile.
+:scroll: **XmlFile.**`: Plik nagłówkowy zawierający deklarację klasy XmlFile.
 
-- `main.cpp`: Plik źródłowy zawierający funkcję main().
+:page_facing_up:  `main.cpp`: Plik źródłowy zawierający funkcję main().
 
 
   
