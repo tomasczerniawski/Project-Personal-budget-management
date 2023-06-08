@@ -4,50 +4,45 @@ Projekt ma na celu pomóc użytkownikom w zarządzaniu swoim budżetem osobistym
 
 ## Schematy
 
-### Expense
+## Opisanie struktur
 
-Opis: Reprezentuje wydatek i zawiera następujące pola:
+### BinaryTreeNode<T>
 
-- `name` (string): Nazwa lub opis wydatku.
-- `expense_id` (int): numer identyfikacji.
-- `amount` (float): Kwota wydatku.
-- `date` (string): Data wydatku w formacie YYYY-MM-DD.
+Klasa reprezentująca węzeł w drzewie binarnym. Ma następujące pola:
 
-### Income
+- `data` (typ `T`): Przechowuje dane reprezentujące przychód lub wydatek.
+- `left` (typ `BinaryTreeNode*`): Wskaźnik na lewe poddrzewo.
+- `right` (typ `BinaryTreeNode*`): Wskaźnik na prawe poddrzewo.
 
-Opis: Reprezentuje dochód i zawiera następujące pola:
+### BinaryTree<T>
 
-- `name` (string): Nazwa lub opis dochodu.
-- `income_id` (int): numer identyfikacji.
-- `amount` (float): Kwota dochodu.
-- `date` (string): Data dochodu w formacie YYYY-MM-DD.
+Klasa reprezentująca drzewo binarne. Ma następujące pola:
 
-## Funkcje
+- `root` (typ `BinaryTreeNode<T>*`): Wskaźnik na korzeń drzewa.
 
-1. Dodaj wydatek lub dochód:
-   - Parametry:
-     - `expense` (Expense): Obiekt reprezentujący wydatek.
-     - `income` (Income): Obiekt reprezentujący dochód.
-     - `amount` (float): Kwota wydatku lub dochodu.
-   - Opis: Dodaje nowy wydatek lub dochód do budżetu.
+### FinanceManager
 
-2. Przeglądaj budżet:
-   - Opis: Wyświetla wszystkie wydatki i dochody w budżecie.
+Klasa zarządzająca finansami. Ma następujące pola:
 
-3. Wyszukaj w budżecie:
-   - Parametry:
-     - `keyword` (string): Słowo kluczowe do wyszukania.
-   - Opis: Wyszukuje wydatki lub dochody zawierające podane słowo kluczowe w nazwie lub kategorii.
+- `CURRENT_USER_ID` (typ `const int`): Identyfikator bieżącego użytkownika.
+- `incomesBinaryTree` (typ `BinaryTree<Income>`): Drzewo binarne przechowujące przychody.
+- `expensesBinaryTree` (typ `BinaryTree<Expense>`): Drzewo binarne przechowujące wydatki.
+- `incomesFile` (typ `IncomesFile`): Obiekt obsługujący plik z danymi dotyczącymi przychodów.
+- `expensesFile` (typ `ExpensesFile`): Obiekt obsługujący plik z danymi dotyczącymi wydatków.
+- `date` (typ `Date`): Obiekt reprezentujący datę.
+- `totalIncome` (typ `float`): Suma przychodów w określonym okresie.
+- `totalExpense` (typ `float`): Suma wydatków w określonym okresie.
+- Pozostałe pola zawierające metody i funkcje.
 
-4. Generuj raporty:
-   - Opis: Generuje raporty na temat budżetu, np. podsumowanie wydatków w poszczególnych kategoriach.
+## Typy parametrów w strukturach
 
-5. Funkcja przypominania o planowanych wydatkach:
-   - Opis: Wysyła powiadomienia użytkownikowi o planowanych wydatkach w określonym czasie lub dniu.
+W powyższych strukturach używane są następujące typy parametrów:
 
-6. Zapisywanie celów finansowych:
-   - Parametry:
-     - `goal` (string): Opis celu finansowego.
-     - `amount` (float): Kwota celu finansowego.
-   - Opis: Zapisuje cel finansowy, który użytkownik chce osiągnąć, wraz z określoną kwotą. Cel finansowy może dotyczyć oszczędzania na konkretny cel, np. wakacje, samochód, czy też spłaty długu. Ta funkcja umożliwia śledzenie postępu w osiąganiu celu finansowego.
+- `T`: Jest to parametr szablonu, który reprezentuje typ danych przechowywanych w drzewie binarnym. W przypadku `incomesBinaryTree` jest to typ `Income`, a w przypadku `expensesBinaryTree` jest to typ `Expense`.
+- `Income`: Klasa reprezentująca przychód.
+- `Expense`: Klasa reprezentująca wydatek.
+- `IncomesFile`: Klasa obsługująca plik z danymi dotyczącymi przychodów.
+- `ExpensesFile`: Klasa obsługująca plik z danymi dotyczącymi wydatków.
+- `Date`: Klasa reprezentująca datę.
+
   
