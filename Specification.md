@@ -105,7 +105,7 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
 - `XmlFile.h`: Plik nagłówkowy zawierający deklarację klasy XmlFile.
 
 - `main.cpp`: Plik źródłowy zawierający funkcję main().
-- `Specification.md`: Plik zawierający specyfikację projektu, w tym opis struktury organizacyjnej katalogów i nazw plików.
+
 
   
   
