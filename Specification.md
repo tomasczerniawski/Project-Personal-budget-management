@@ -146,13 +146,15 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   ![image](https://www.codesdope.com/staticroot/images/ds/bst9.gif)
   
-  **W moim kodzie:**
+  **W mym kodzie:**
  - Obiekty są porównywane na podstawie wartości ich identyfikatora (IncomeId). Jeśli IncomeId danego obiektu jest mniejsze niż IncomeId bieżącego węzła, to obiekt jest wstawiany do lewego poddrzewa. W przeciwnym przypadku, jeśli IncomeId jest większe lub równe IncomeId bieżącego węzła, obiekt jest wstawiany do prawego poddrzewa. W ten sposób drzewo binarne jest konstruowane w taki sposób, że wartości IncomeId są uporządkowane rosnąco w drzewie.
 
 
 ### inOrderTraversalRecursive
 - Metoda `inOrderTraversalRecursive` to algorytm rekurencyjny do in-order traversal drzewa binarnego. Przechodzi przez drzewo w porządku rosnącym, odwiedzając najpierw lewe poddrzewo, następnie bieżący węzeł i na koniec prawe poddrzewo. W tym przypadku, wartość opisująca węzeł jest wypisywana na standardowym wyjściu.
-
+  
+  ![image](https://lh3.googleusercontent.com/QRTgAbTK-54jPLU87RN4OAXWlBu1WR36LyaANNQ_Pg0N2gKmM0k_30h5S68Dwm_2qledVGQd5Byltj16KO3J5ufZs1ipixS4DKpHTRITXDiHajiLXEjf_sY7Id7e8G7r4mhBbANn)
+  
 ### searchRecursive
 - Metoda `searchRecursive` to algorytm rekurencyjny do wyszukiwania węzłów w drzewie binarnym na podstawie podanego słowa kluczowego. Przeszukuje drzewo, porównując opisy węzłów z podanym słowem kluczowym. Jeśli węzeł jest znaleziony, zostaje zwrócony. W przeciwnym razie, algorytm rekurencyjnie przeszukuje lewe i prawe poddrzewo.
 
