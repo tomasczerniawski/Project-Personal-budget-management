@@ -62,29 +62,33 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
 
 ## Katalog src/
 
- :page_facing_up: `AdjuvantMethods.cpp`: Plik źródłowy zawierający pomocnicze metody.
+:page_facing_up: `AdjuvantMethods.cpp`: Plik źródłowy zawierający pomocnicze metody.
 
- :page_facing_up:  `AdjuvantMethods.h:` Plik nagłówkowy zawierający deklaracje pomocniczych metod.
+:page_facing_up:  `AdjuvantMethods.h:` Plik nagłówkowy zawierający deklaracje pomocniczych metod.
   
- :page_facing_up: Budget.cpp: Plik źródłowy zawierający implementację klasy Budget.
+:page_facing_up: Budget.cpp: Plik źródłowy zawierający implementację klasy Budget.
 
- :page_facing_up: Budget.h: Plik nagłówkowy zawierający deklarację klasy Budget.
+:page_facing_up: Budget.h: Plik nagłówkowy zawierający deklarację klasy Budget.
 
 :page_facing_up: `Date.cpp`: Plik źródłowy zawierający implementację klasy Date.
   
 :page_facing_up: `Date.h`: Plik nagłówkowy zawierający deklarację klasy Date.
 
-- `Expense.cpp`: Plik źródłowy zawierający implementację klasy Expense.
-- `Expense.h`: Plik nagłówkowy zawierający deklarację klasy Expense.
+:page_facing_up: Expense.cpp: Plik źródłowy zawierający implementację klasy Expense.
+  
+:page_facing_up: Expense.h: Plik nagłówkowy zawierający deklarację klasy Expense.
 
-- `ExpensesFile.cpp`: Plik źródłowy zawierający implementację klasy ExpensesFile.
-- `ExpensesFile.h`: Plik nagłówkowy zawierający deklarację klasy ExpensesFile.
+:page_facing_up: `ExpensesFile.cpp`: Plik źródłowy zawierający implementację klasy ExpensesFile.
+  
+:page_facing_up: `ExpensesFile.h`: Plik nagłówkowy zawierający deklarację klasy ExpensesFile.
 
-- `Finance.cpp`: Plik źródłowy zawierający implementację klasy Finance.
-- `Finance.h`: Plik nagłówkowy zawierający deklarację klasy Finance.
+:page_facing_up: Finance.cpp: Plik źródłowy zawierający implementację klasy Finance.
+  
+:page_facing_up: Finance.h: Plik nagłówkowy zawierający deklarację klasy Finance.
 
-- `FinanceManager.cpp`: Plik źródłowy zawierający implementację klasy FinanceManager.
-- `FinanceManager.h`: Plik nagłówkowy zawierający deklarację klasy FinanceManager.
+:page_facing_up: `FinanceManager.cpp`: Plik źródłowy zawierający implementację klasy FinanceManager.
+  
+:page_facing_up: `FinanceManager.h`: Plik nagłówkowy zawierający deklarację klasy FinanceManager.
 
 - `Income.cpp`: Plik źródłowy zawierający implementację klasy Income.
 - `Income.h`: Plik nagłówkowy zawierający deklarację klasy Income.
