@@ -42,5 +42,10 @@ W powyższych strukturach używane są następujące typy parametrów:
 - `IncomesFile`: Klasa obsługująca plik z danymi dotyczącymi przychodów.
 - `ExpensesFile`: Klasa obsługująca plik z danymi dotyczącymi wydatków.
 - `Date`: Klasa reprezentująca datę.
+  
+  
+  # Język programowania: C++
+  Wybrałem język C++ do tego projektu z powodu:
+  - Obiektowość: C++ jest językiem programowania obiektowego, co umożliwia strukturalne i modułowe projektowanie aplikacji. Możemy używać klas i obiektów, aby logicznie grupować związane ze sobą funkcje i dane.
 
   
