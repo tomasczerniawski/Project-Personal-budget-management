@@ -164,14 +164,21 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   **W mym kodzie:**
   
--Metoda "search" przyjmuje parametr "keyword", który reprezentuje opis, którego szukamy w drzewie. Metoda wywołuje funkcję "searchRecursive" przekazując jej korzeń drzewa ("root") oraz poszukiwane "keyword". Funkcja "searchRecursive" rozpoczyna od sprawdzenia, czy bieżący węzeł jest pusty lub czy jego opis odpowiada poszukiwanemu "keyword". Jeśli tak, zwraca ten węzeł.
+- Metoda "search" przyjmuje parametr "keyword", który reprezentuje opis, którego szukamy w drzewie. Metoda wywołuje funkcję "searchRecursive" przekazując jej korzeń drzewa ("root") oraz poszukiwane "keyword". Funkcja "searchRecursive" rozpoczyna od sprawdzenia, czy bieżący węzeł jest pusty lub czy jego opis odpowiada poszukiwanemu "keyword". Jeśli tak, zwraca ten węzeł.
 
 - Jeśli opis bieżącego węzła nie odpowiada poszukiwanemu "keyword", funkcja rekurencyjnie wywołuje się dla lewego i prawego poddrzewa. Jeśli znaleziono węzeł w lewym poddrzewie, zwraca ten węzeł. W przeciwnym razie, wywołuje się dla prawego poddrzewa.
 
 - W przypadku, gdy nie zostanie znaleziony żaden węzeł o odpowiadającym opisie "keyword", funkcja "search" zwraca nullptr.
 
+  
+  # W pliku FinanceManager.cpp
+  
+  ## Algorytmy
+  
+ ### Bubble Sort
+- Bubble Sort (sortowanie bąbelkowe) to prosty algorytm sortowania, który porównuje sąsiednie elementy i zamienia je miejscami, jeśli są w niewłaściwej kolejności. Algorytm wykonuje te operacje w pętli, przechodząc przez listę wielokrotnie, aż lista będzie posortowana.
 
-  
-  
-  
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/beff2f5c-7fda-4af1-b899-b777127afd25)
+
+  Podsumowując, w tym kodzie Bubble Sort jest używany do sortowania danych w drzewie binarnym. Algorytm porównuje i zamienia miejscami węzły na podstawie ich wartości przychodów.
   
