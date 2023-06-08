@@ -45,7 +45,8 @@ W powyższych strukturach używane są następujące typy parametrów:
   
   
   # Język programowania: C++
-  Wybrałem język C++ do tego projektu z powodu:
+  Wybrałem język C++  do tego projektu z kilku powodów:
   - Obiektowość: C++ jest językiem programowania obiektowego, co umożliwia strukturalne i modułowe projektowanie aplikacji. Możemy używać klas i obiektów, aby logicznie grupować związane ze sobą funkcje i dane.
-
+  - Biblioteki i narzędzia: oferuje szeroki zakres bibliotek i narzędzi, które mogą być przydatne przy tworzeniu projektu zarządzania finansami. Na przykład, możemy korzystać z bibliotek do obsługi plików, struktur danych czy obliczeń matematycznych. 
+  - Poruwnając z innymi językami programowania pracowałem z C++ najwięcej
   
