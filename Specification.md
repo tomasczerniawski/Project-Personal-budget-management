@@ -145,6 +145,10 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 - Metoda `insertRecursive` to algorytm rekurencyjny do wstawiania węzłów do drzewa binarnego. Wyszukuje odpowiednie miejsce w drzewie, aby wstawić nowy węzeł na podstawie wartości klucza. Jeśli węzeł jest mniejszy od bieżącego węzła, zostaje wstawiony do lewego poddrzewa; w przeciwnym razie zostaje wstawiony do prawego poddrzewa.
   
   ![image](https://static.javatpoint.com/ds/images/insertion-in-binary-search-tree.png)
+  
+  **W moim kodzie:**
+ - Obiekty są porównywane na podstawie wartości ich identyfikatora (IncomeId). Jeśli IncomeId danego obiektu jest mniejsze niż IncomeId bieżącego węzła, to obiekt jest wstawiany do lewego poddrzewa. W przeciwnym przypadku, jeśli IncomeId jest większe lub równe IncomeId bieżącego węzła, obiekt jest wstawiany do prawego poddrzewa. W ten sposób drzewo binarne jest konstruowane w taki sposób, że wartości IncomeId są uporządkowane rosnąco w drzewie.
+
 
 ### inOrderTraversalRecursive
 - Metoda `inOrderTraversalRecursive` to algorytm rekurencyjny do in-order traversal drzewa binarnego. Przechodzi przez drzewo w porządku rosnącym, odwiedzając najpierw lewe poddrzewo, następnie bieżący węzeł i na koniec prawe poddrzewo. W tym przypadku, wartość opisująca węzeł jest wypisywana na standardowym wyjściu.
