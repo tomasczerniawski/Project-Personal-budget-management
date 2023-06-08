@@ -71,7 +71,7 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
  :page_facing_up: Budget.h: Plik nagłówkowy zawierający deklarację klasy Budget.
 
 :page_facing_up: `Date.cpp`: Plik źródłowy zawierający implementację klasy Date.
-:page_facing_up:`Date.h`: Plik nagłówkowy zawierający deklarację klasy Date.
+:page_facing_up: `Date.h`: Plik nagłówkowy zawierający deklarację klasy Date.
 
 - `Expense.cpp`: Plik źródłowy zawierający implementację klasy Expense.
 - `Expense.h`: Plik nagłówkowy zawierający deklarację klasy Expense.
