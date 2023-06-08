@@ -158,7 +158,17 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 ### searchRecursive
 - Metoda `searchRecursive` to algorytm rekurencyjny do wyszukiwania węzłów w drzewie binarnym na podstawie podanego słowa kluczowego. Przeszukuje drzewo, porównując opisy węzłów z podanym słowem kluczowym. Jeśli węzeł jest znaleziony, zostaje zwrócony. W przeciwnym razie, algorytm rekurencyjnie przeszukuje lewe i prawe poddrzewo.
 
-Te algorytmy i struktury danych umożliwiają efektywne dodawanie nowych węzłów do drzewa binarnego, przeglądanie węzłów w określonym porządku oraz wyszukiwanie węzłów na podstawie podanego słowa kluczowego. Są one używane w projekcie do manipulacji danymi dotyczącymi wydatków i przychodów.
+  
+    
+  
+  **W mym kodzie:**
+  
+-Metoda "search" przyjmuje parametr "keyword", który reprezentuje opis, którego szukamy w drzewie. Metoda wywołuje funkcję "searchRecursive" przekazując jej korzeń drzewa ("root") oraz poszukiwane "keyword". Funkcja "searchRecursive" rozpoczyna od sprawdzenia, czy bieżący węzeł jest pusty lub czy jego opis odpowiada poszukiwanemu "keyword". Jeśli tak, zwraca ten węzeł.
+
+- Jeśli opis bieżącego węzła nie odpowiada poszukiwanemu "keyword", funkcja rekurencyjnie wywołuje się dla lewego i prawego poddrzewa. Jeśli znaleziono węzeł w lewym poddrzewie, zwraca ten węzeł. W przeciwnym razie, wywołuje się dla prawego poddrzewa.
+
+- W przypadku, gdy nie zostanie znaleziony żaden węzeł o odpowiadającym opisie "keyword", funkcja "search" zwraca nullptr.
+
 
   
   
