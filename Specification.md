@@ -130,21 +130,25 @@ W pliku BinaryTree.h została zaimplementowana struktura danych drzewa binarnego
 ## Struktura danych
 
 ### BinaryTreeNode
-Klasa `BinaryTreeNode` reprezentuje węzeł drzewa binarnego. Posiada trzy pola: `data`, przechowujące wartość węzła, oraz wskaźniki `left` i `right`, wskazujące na lewe i prawe poddrzewo.
+Klasa `BinaryTreeNode` reprezentuje węzeł drzewa binarnego. Posiada trzy pola: 
+  
+- `data:` przechowujące wartość węzła
+- `left` i `right`, wskazujące na lewe i prawe poddrzewo.
 
 ### BinaryTree
-Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole `root`, które wskazuje na korzeń drzewa. Klasa udostępnia metody do wstawiania węzłów, przeprowadzania in-order traversal (przechodzenia drzewa w porządku rosnącym) oraz wyszukiwania węzłów na podstawie podanego słowa kluczowego.
+Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
+-`root:` które wskazuje na korzeń drzewa. Klasa udostępnia metody do wstawiania węzłów, przeprowadzania in-order traversal (przechodzenia drzewa w porządku rosnącym) oraz wyszukiwania węzłów na podstawie podanego słowa kluczowego.
 
 ## Algorytmy
 
 ### insertRecursive
-Metoda `insertRecursive` to algorytm rekurencyjny do wstawiania węzłów do drzewa binarnego. Wyszukuje odpowiednie miejsce w drzewie, aby wstawić nowy węzeł na podstawie wartości klucza. Jeśli węzeł jest mniejszy od bieżącego węzła, zostaje wstawiony do lewego poddrzewa; w przeciwnym razie zostaje wstawiony do prawego poddrzewa.
+- Metoda `insertRecursive` to algorytm rekurencyjny do wstawiania węzłów do drzewa binarnego. Wyszukuje odpowiednie miejsce w drzewie, aby wstawić nowy węzeł na podstawie wartości klucza. Jeśli węzeł jest mniejszy od bieżącego węzła, zostaje wstawiony do lewego poddrzewa; w przeciwnym razie zostaje wstawiony do prawego poddrzewa.
 
 ### inOrderTraversalRecursive
-Metoda `inOrderTraversalRecursive` to algorytm rekurencyjny do in-order traversal drzewa binarnego. Przechodzi przez drzewo w porządku rosnącym, odwiedzając najpierw lewe poddrzewo, następnie bieżący węzeł i na koniec prawe poddrzewo. W tym przypadku, wartość opisująca węzeł jest wypisywana na standardowym wyjściu.
+- Metoda `inOrderTraversalRecursive` to algorytm rekurencyjny do in-order traversal drzewa binarnego. Przechodzi przez drzewo w porządku rosnącym, odwiedzając najpierw lewe poddrzewo, następnie bieżący węzeł i na koniec prawe poddrzewo. W tym przypadku, wartość opisująca węzeł jest wypisywana na standardowym wyjściu.
 
 ### searchRecursive
-Metoda `searchRecursive` to algorytm rekurencyjny do wyszukiwania węzłów w drzewie binarnym na podstawie podanego słowa kluczowego. Przeszukuje drzewo, porównując opisy węzłów z podanym słowem kluczowym. Jeśli węzeł jest znaleziony, zostaje zwrócony. W przeciwnym razie, algorytm rekurencyjnie przeszukuje lewe i prawe poddrzewo.
+- Metoda `searchRecursive` to algorytm rekurencyjny do wyszukiwania węzłów w drzewie binarnym na podstawie podanego słowa kluczowego. Przeszukuje drzewo, porównując opisy węzłów z podanym słowem kluczowym. Jeśli węzeł jest znaleziony, zostaje zwrócony. W przeciwnym razie, algorytm rekurencyjnie przeszukuje lewe i prawe poddrzewo.
 
 Te algorytmy i struktury danych umożliwiają efektywne dodawanie nowych węzłów do drzewa binarnego, przeglądanie węzłów w określonym porządku oraz wyszukiwanie węzłów na podstawie podanego słowa kluczowego. Są one używane w projekcie do manipulacji danymi dotyczącymi wydatków i przychodów.
 
