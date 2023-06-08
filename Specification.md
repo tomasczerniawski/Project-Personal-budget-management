@@ -62,11 +62,13 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
 
 ## Katalog src/
 
-    - `AdjuvantMethods.cpp`: Plik źródłowy zawierający pomocnicze metody.
-    - `AdjuvantMethods.h`: Plik nagłówkowy zawierający deklaracje pomocniczych metod.
+:page_facing_up: AdjuvantMethods.cpp: Plik źródłowy zawierający pomocnicze metody.
 
-- `Budget.cpp`: Plik źródłowy zawierający implementację klasy Budget.
-- `Budget.h`: Plik nagłówkowy zawierający deklarację klasy Budget.
+:page_facing_up: AdjuvantMethods.h: Plik nagłówkowy zawierający deklaracje pomocniczych metod.
+
+:page_facing_up: Budget.cpp: Plik źródłowy zawierający implementację klasy Budget.
+
+:page_facing_up: Budget.h: Plik nagłówkowy zawierający deklarację klasy Budget.
 
 - `Date.cpp`: Plik źródłowy zawierający implementację klasy Date.
 - `Date.h`: Plik nagłówkowy zawierający deklarację klasy Date.
