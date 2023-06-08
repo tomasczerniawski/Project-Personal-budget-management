@@ -62,7 +62,7 @@ W projekcie Finansowy zastosowano następującą strukturę organizacyjną katal
 
 ## Katalog src/
 
-:page_facing_up: AdjuvantMethods.cpp: Plik źródłowy zawierający pomocnicze metody.
+:page_facing_up: `AdjuvantMethods.cpp`: Plik źródłowy zawierający pomocnicze metody.
 
 :page_facing_up: AdjuvantMethods.h: Plik nagłówkowy zawierający deklaracje pomocniczych metod.
 
