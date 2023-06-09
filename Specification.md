@@ -184,8 +184,9 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   # Funkcje:
   
-  ### Ta funkcja przedstawia menu główne programu
- ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/18c78147-c0f0-4d31-9eb6-8dc411b0c6f2)
+  ### Ta funkcja przedstawia menu łogowania programu
+ ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/f2d16123-d743-4739-bc84-f960d7223ba0)
+
 
 
 
@@ -198,7 +199,9 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Exit: Ta opcja umożliwia użytkownikowi zakończenie działania programu. Po wybraniu tej opcji program zostaje zamknięty i zakończony.
   
-  
+   ### Glówna menu projektu Personal Budget Managment
+ ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/2ed0f216-047a-4f2b-a09d-96b7e755ad7d)
+
   
   
   
