@@ -215,7 +215,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
   - Opcja "Add expense" pozwala użytkownikowi dodać nowy wydatek do systemu i pracuje wten sam sposób jak "Add income".
   
-    ## Fumkcja Zobacz saldo bieżącego miesiąca (wybór nr. 3)
+    ## Fumkcja budżet saldo bieżącego miesiąca (wybór nr. 3)
   
   ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c7e3aa5a-61fb-4698-bad5-1a010649c8bd)
 
@@ -227,5 +227,39 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Funkcja kończy działanie, gdy przejdzie przez wszystkie węzły drzewa dochodów i wydatków w ten sam sposób lub gdy stos jest pusty.
   
+    ## Fumkcja zobacz budżet wybranego okresu (wybór nr. 4)
   
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/efc3be6e-9470-413b-959d-a6aa9c95cc29)
+
+- Funkcja "viewBalanceOfSelectedPeriod" służy do wyświetlania bilansu dla wybranego okresu. Użytkownik jest proszony o podanie daty początkowej i daty końcowej okresu, który chce przeglądać. Następnie funkcja oblicza minimalną i maksymalną datę dla tego okresu.
+- Pracuje wten sam sposób ja funkcja poprzednia tyko użytkownik tu podaje okres przepatrywanego budżetu
+  
+  ## Fumkcja wyświetl wszystkie dochody/wydatki (wybór nr. 5/6)
+  
+  View all incomes:
+Funkcja "viewAllIncomes" służy do wyświetlania wszystkich przychodów. Na początku funkcja wywołuje funkcję "viewIncome", przekazując jej korzeń drzewa binarnego "incomesBinaryTree". Następnie funkcja czeka na naciśnięcie dowolnego klawisza przez użytkownika, aby kontynuować.
+
+Funkcja "copyBinaryTree" kopiuje drzewo binarne, które jest przekazywane jako argument "node". Tworzony jest nowy węzeł o takiej samej wartości, a następnie rekurencyjnie kopiowane są lewe i prawe poddrzewa.
+
+Funkcja "deleteBinaryTree" służy do usuwania drzewa binarnego, które jest przekazywane jako argument "node". Rekurencyjnie usuwane są lewe i prawe poddrzewa, a następnie usuwany jest węzeł.
+
+Funkcja "viewIncome" inicjuje wyświetlanie przychodów. Na początku tworzy kopię oryginalnego drzewa przychodów za pomocą funkcji "copyBinaryTree". Następnie wyświetla użytkownikowi opcje sortowania przychodów, takie jak sortowanie według daty (najnowsze lub najstarsze) lub sortowanie według ceny (najtańsze lub najdroższe). Wybór użytkownika jest przechowywany w zmiennej "choice".
+
+W zależności od wyboru użytkownika, wyświetlane są przychody w określonej kolejności sortowania. Funkcje takie jak "viewIncomeByDateNewest", "viewIncomeByDateOldest", "sortIncomesByAmount", "displayIncomesByAmount" i "viewIncomeByPriceMostExpensive" są wywoływane w zależności od wyboru użytkownika.
+
+Funkcje "viewIncomeByDateNewest" i "viewIncomeByDateOldest" służą do wyświetlania przychodów posortowanych według daty, z najnowszymi lub najstarszymi na początku. Wykorzystują one stos do przechodzenia drzewa binarnego w odwrotnej kolejności (prawo, korzeń, lewo) i przechowują posortowane przychody w kontenerze "sortedIncomes". Następnie posortowane przychody są wyświetlane na ekranie.
+
+Funkcja "countNodes" służy do zliczania liczby węzłów w drzewie binarnym, które jest przekazywane jako argument "node". Rekurencyjnie obliczana jest liczba węzłów w lewym i prawym poddrzewie, a następnie dodawana jest jednostka za aktualny węzeł.
+
+Funkcja "sortIncomesByAmount" sortuje przychody według ceny, wykorzystując algorytm sortowania bąbelkowego. Najpierw obliczana jest liczba węzłów w poddrzewie, a następnie porównywane są sąsiednie węzły i zamieniane, jeśli cena jednego jest większa od drugiego. Ta procedura jest powtarzana dla wszystkich węzłów.
+
+Funkcja "displayIncomesByAmount" wyświetla przychody według ceny, korzystając z porządku inorder (lewo, korzeń, prawo). Rekurencyjnie wywoływana jest dla lewego poddrzewa, wyświetlany jest aktualny przychód, a następnie rekurencyjnie wywoływana jest dla prawego poddrzewa.
+
+Funkcja "viewIncomeByPriceCheapest" sortuje przychody według ceny od najtańszego do najdroższego, wywołując funkcję "sortIncomesByAmount" i "displayIncomesByAmount" dla korzenia drzewa przychodów.
+
+Funkcja "viewIncomeByPriceMostExpensive" wyświetla przychody według ceny od najdroższego do najtańszego. Wykorzystuje ona przechodzenie drzewa binarnego w kolejności prawo, korzeń, lewo, aby wyświetlić przychody w odpowiedniej kolejności.
+
+Funkcja "displayIncome" wyświetla informacje o pojedynczym przychodzie. Wyświetlane są takie dane jak ID przychodu, ID użytkownika, data, przedmiot i kwota.
+  Aby uniknąć modyfikowania oryginalnego drzewa, tworzona jest kopia, na której wykonywane są te operacje.
+ 
   
