@@ -186,7 +186,8 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   ### Ta funkcja przedstawia menu główne programu
   
-  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/d553f8d6-dc60-4c97-9ae0-eb646c47cde2)
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/e99d1cd6-15db-4ec4-9156-d3d5ad77a0ad)
+
 
 - `Main Menu:` Funkcja wyświetla główne menu programu, gdzie użytkownik może wybrać jedną z trzech opcji:
 
