@@ -202,7 +202,12 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
    ### Glówna menu projektu Personal Budget Managment
 ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/2ed0f216-047a-4f2b-a09d-96b7e755ad7d)
+  
+  ## Fumkcja Add Income (wybór nr. 1)
+  
+![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/84936fe3-858a-47b3-9aea-e3235c9c5365)
 
+  - Opcja "Add income" pozwala użytkownikowi dodać nowy przychód do systemu. Po wybraniu tej opcji, użytkownik jest prowadzony przez proces wprowadzania danych dotyczących przychodu, takich jak data, przedmiot i kwota, przepisane automatychnie do kądego dochodu jest identyfikator użytkownika, i identyfikator dochodu. Następnie funkcja wywołuje funkcję "addIncomeToXmlFile" w celu dodania przychodu do pliku XML. Jeśli dodawanie przebiegnie pomyślnie, wyświetlany jest komunikat potwierdzający. Po zakończeniu użytkownik jest proszony o naciśnięcie dowolnego klawisza w celu kontynuacji.
   
   
   
