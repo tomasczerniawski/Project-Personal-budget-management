@@ -297,9 +297,19 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Funkcje countMonthlyIncomes i countMonthlyExpenses są funkcjami pomocniczymi, które rekurencyjnie przechodzą przez drzewa binarne przychodów i wydatków, obliczając sumy przychodów i wydatków dla poszczególnych miesięcy w określonym okresie. Znalezione kwoty są przechowywane w wektorach monthlyIncomes i monthlyExpenses.
 
+## FumkcjaGeneruj losowy budżet (wybór nr. 9)
   
+### Generate random budget
   
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c598b766-4fa5-425b-ae8f-41006c92375c)
   
+- Użytkownik jest proszony o podanie daty początkowej i końcowej okresu,  podanie minimalnej i maksymalnej kwoty i liczbe wydaków i dochodów generowanych
+Generowana jest losowa kwota w podanym zakresie przy użyciu funkcji "rand()" oraz operacji matematycznych.
+
+- Generowanie losowej daty w podanym zakresie opiera się na wykorzystaniu minimalnych i maksymalnych wartości roku, miesiąca i dnia, a następnie korzysta z funkcji "rand()" do wygenerowania losowych wartości dla tych składników daty.
+  
+- Dodatkowo, funkcja korzysta z drzew binarnych (incomesBinaryTree i expensesBinaryTree) do przechowywania wygenerowanych przychodów i wydatków. W przypadku generowania przychodu, tworzony jest obiekt klasy "Income" i dodawany do incomesBinaryTree. W przypadku generowania wydatku, tworzony jest obiekt klasy "Expense" i dodawany do expensesBinaryTree
+
   
   
   
