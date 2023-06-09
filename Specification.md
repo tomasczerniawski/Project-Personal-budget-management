@@ -173,7 +173,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   # W pliku FinanceManager.cpp
   
-  ## Algorytmy
+ ## Algorytmy
   
  ### Bubble Sort
 - Bubble Sort (sortowanie bąbelkowe) to prosty algorytm sortowania, który porównuje sąsiednie elementy i zamienia je miejscami, jeśli są w niewłaściwej kolejności. Algorytm wykonuje te operacje w pętli, przechodząc przez listę wielokrotnie, aż lista będzie posortowana.
@@ -184,7 +184,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   # Funkcje:
   
-  ### Ta funkcja przedstawia menu łogowania programu
+### Ta funkcja przedstawia menu łogowania programu
 ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/281e3ade-4f49-476a-94ea-18deeb2ceb9d)
 
 
@@ -200,30 +200,30 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Exit: Ta opcja umożliwia użytkownikowi zakończenie działania programu. Po wybraniu tej opcji program zostaje zamknięty i zakończony.
   
-   ### Glówna menu projektu Personal Budget Managment
+### Glówna menu projektu Personal Budget Managment
 ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/2ed0f216-047a-4f2b-a09d-96b7e755ad7d)
   
-  ## Fumkcja Dodać dochód (wybór nr. 1)
+## Fumkcja Dodać dochód (wybór nr. 1)
   
-    ### Add income
+### Add income
   
 ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c9a0d5d3-443a-4722-842b-fd823d8b4c6f)
 
   - Opcja "Add income" pozwala użytkownikowi dodać nowy przychód do systemu. Po wybraniu tej opcji, użytkownik jest prowadzony przez proces wprowadzania danych dotyczących przychodu, takich jak data, przedmiot i kwota, przepisane automatychnie do kądego dochodu jest identyfikator użytkownika, i identyfikator dochodu. Następnie funkcja wywołuje funkcję "addIncomeToXmlFile" w celu dodania przychodu do pliku XML. Jeśli dodawanie przebiegnie pomyślnie, wyświetlany jest komunikat potwierdzający. Po zakończeniu użytkownik jest proszony o naciśnięcie dowolnego klawisza w celu kontynuacji.
   
-  ## Fumkcja Dodać wydatek (wybór nr. 2)
+## Fumkcja Dodać wydatek (wybór nr. 2)
 
-  ### Add expense
+### Add expense
   
-  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/be705b86-d220-4382-8f20-1caf45bc4c22)
+![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/be705b86-d220-4382-8f20-1caf45bc4c22)
 
   - Opcja "Add expense" pozwala użytkownikowi dodać nowy wydatek do systemu i pracuje wten sam sposób jak "Add income".
   
-    ## Fumkcja budżet saldo bieżącego miesiąca (wybór nr. 3)
+## Fumkcja budżet saldo bieżącego miesiąca (wybór nr. 3)
   
-  ### View current month's balance
+### View current month's balance
   
-  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c7e3aa5a-61fb-4698-bad5-1a010649c8bd)
+![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c7e3aa5a-61fb-4698-bad5-1a010649c8bd)
 
  - Funkcja "viewCurrentMonthBalance" służy do wyświetlania bilansu bieżącego miesiąca. Najpierw oblicza minimalną i maksymalną datę dla bieżącego miesiąca na podstawie aktualnej daty systemowej. Wyświetlane są informacje dotyczące przychodów i wydatków bieżącego miesiąca oraz podsumowanie.
 
@@ -233,22 +233,22 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Funkcja kończy działanie, gdy przejdzie przez wszystkie węzły drzewa dochodów i wydatków w ten sam sposób lub gdy stos jest pusty.
   
-    ## Fumkcja zobacz budżet wybranego okresu (wybór nr. 4)
+## Fumkcja zobacz budżet wybranego okresu (wybór nr. 4)
   
-  ### View balance of the selected period
+### View balance of the selected period
   
-  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/efc3be6e-9470-413b-959d-a6aa9c95cc29)
+![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/efc3be6e-9470-413b-959d-a6aa9c95cc29)
 
 - Funkcja "viewBalanceOfSelectedPeriod" służy do wyświetlania bilansu dla wybranego okresu. Użytkownik jest proszony o podanie daty początkowej i daty końcowej okresu, który chce przeglądać. Następnie funkcja oblicza minimalną i maksymalną datę dla tego okresu.
 - Pracuje wten sam sposób ja funkcja poprzednia tyko użytkownik tu podaje okres przepatrywanego budżetu
   
-  ## Fumkcja wyświetl wszystkie dochody/wydatki (wybór nr. 5/6)
+## Fumkcja wyświetl wszystkie dochody/wydatki (wybór nr. 5/6)
   
 ### View all incomes/expenses:
   
   - Zlanczam te dwie opcje bo pracują jednakowo.
   
-  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/26c3e90b-6f09-46fd-bbdd-0a5785a55866)
+![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/26c3e90b-6f09-46fd-bbdd-0a5785a55866)
 
 - Funkcja "viewAllIncomes" służy do wyświetlania wszystkich przychodów. Na początku funkcja wywołuje funkcję "viewIncome", przekazując jej korzeń drzewa binarnego "incomesBinaryTree". 
 
@@ -269,11 +269,11 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 - Funkcja "displayIncomesByAmount" wyświetla przychody według ceny, korzystając z porządku inorder (lewo, korzeń, prawo). Rekurencyjnie wywoływana jest dla lewego poddrzewa, wyświetlany jest aktualny przychód, a następnie rekurencyjnie wywoływana jest dla prawego poddrzewa.  
 
   
-    ## Fumkcja Szukaj w budżecie (wybór nr. 7)
+## Fumkcja Szukaj w budżecie (wybór nr. 7)
   
-  ### Search in budget
+### Search in budget
   
-  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/ef741b7b-7b99-476e-a517-2c7a573fa1e1)
+![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/ef741b7b-7b99-476e-a517-2c7a573fa1e1)
   
  - Funkcje searchIncomesAndExpenses, searchIncomeByItemRecursive i searchExpenseByItemRecursive służą do wyszukiwania przychodów i wydatków na podstawie podanego słowa kluczowego.
 
@@ -281,11 +281,11 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Funkcje searchIncomeByItemRecursive i searchExpenseByItemRecursive rekurencyjnie przeszukują drzewa binarne przychodów i wydatków w poszukiwaniu węzłów, których element "item" jest zgodny z podanym słowem kluczowym. Jeśli takie węzły są znalezione, wywoływana jest funkcja displayIncome lub displayExpense, która wyświetla szczegóły dotyczące znalezionego przychodu lub wydatku. Parametr resultsFound jest używany do śledzenia, czy znaleziono jakiekolwiek wyniki.
 
- ## Fumkcja Generuj raport (wybór nr. 8)
+## Fumkcja Generuj raport (wybór nr. 8)
   
-  ### Generate report
+### Generate report
   
-  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/a3d1af62-022a-4c03-9e76-b3d50177422c)
+![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/a3d1af62-022a-4c03-9e76-b3d50177422c)
 
  -Funkcje generateMonthlyIncomeChart, countMonthlyIncomes i countMonthlyExpenses służą do generowania raportu miesięcznego dotyczącego budżetu.
 
