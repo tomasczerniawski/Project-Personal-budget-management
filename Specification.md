@@ -182,3 +182,29 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
   Podsumowując, w tym kodzie Bubble Sort jest używany do sortowania danych w drzewie binarnym. Algorytm porównuje i zamienia miejscami węzły na podstawie ich wartości przychodów.
   
+  #Funkcje:
+  
+  ### Ta funkcja przedstawia menu główne programu
+  
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/d553f8d6-dc60-4c97-9ae0-eb646c47cde2)
+
+- `Main Menu:` Funkcja wyświetla główne menu programu, gdzie użytkownik może wybrać jedną z trzech opcji:
+
+- Sign up: Ta opcja pozwala użytkownikowi zarejestrować nowe konto. Po wybraniu tej opcji, użytkownik zostaje poproszony o podanie swoich danych rejestracyjnych, takich jak nazwa użytkownika i hasło. Następnie te dane są przetwarzane i zapisywane w XML filu gdzie jest także nadawany numer identyfikacyjny (UserId), umożliwiając użytkownikowi korzystanie z programu.
+
+- Sign in: Ta opcja umożliwia zalogowanie się do istniejącego konta. Po wybraniu tej opcji, użytkownik zostaje poproszony o podanie swojej nazwy użytkownika i hasła w celu uwierzytelnienia. Jeśli dane logowania są poprawne, użytkownik uzyskuje dostęp do pełnej funkcjonalności programu.
+
+- Exit: Ta opcja umożliwia użytkownikowi zakończenie działania programu. Po wybraniu tej opcji program zostaje zamknięty i zakończony.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
