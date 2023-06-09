@@ -147,7 +147,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   ![image](https://www.codesdope.com/staticroot/images/ds/bst9.gif)
   
   **W mym kodzie:**
- - Obiekty są porównywane na podstawie wartości ich identyfikatora (IncomeId). Jeśli IncomeId danego obiektu jest mniejsze niż IncomeId bieżącego węzła, to obiekt jest wstawiany do lewego poddrzewa. W przeciwnym przypadku, jeśli IncomeId jest większe lub równe IncomeId bieżącego węzła, obiekt jest wstawiany do prawego poddrzewa. W ten sposób drzewo binarne jest konstruowane w taki sposób, że wartości IncomeId są uporządkowane rosnąco w drzewie.
+ - Obiekty są porównywane na podstawie wartości ich ceny (Amount). Jeśli Amount danego obiektu jest mniejsze niż Amount bieżącego węzła, to obiekt jest wstawiany do lewego poddrzewa. W przeciwnym przypadku, jeśli Amount jest większe lub równe Amount bieżącego węzła, obiekt jest wstawiany do prawego poddrzewa. W ten sposób drzewo binarne jest konstruowane w taki sposób, że wartości Amount są uporządkowane rosnąco w drzewie.
 
 
 ### inOrderTraversalRecursive
