@@ -205,17 +205,23 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   ## Fumkcja Dodać dochód (wybór nr. 1)
   
+    ### Add income
+  
 ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c9a0d5d3-443a-4722-842b-fd823d8b4c6f)
 
   - Opcja "Add income" pozwala użytkownikowi dodać nowy przychód do systemu. Po wybraniu tej opcji, użytkownik jest prowadzony przez proces wprowadzania danych dotyczących przychodu, takich jak data, przedmiot i kwota, przepisane automatychnie do kądego dochodu jest identyfikator użytkownika, i identyfikator dochodu. Następnie funkcja wywołuje funkcję "addIncomeToXmlFile" w celu dodania przychodu do pliku XML. Jeśli dodawanie przebiegnie pomyślnie, wyświetlany jest komunikat potwierdzający. Po zakończeniu użytkownik jest proszony o naciśnięcie dowolnego klawisza w celu kontynuacji.
   
   ## Fumkcja Dodać wydatek (wybór nr. 2)
 
+  ### Add expense
+  
   ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/be705b86-d220-4382-8f20-1caf45bc4c22)
 
   - Opcja "Add expense" pozwala użytkownikowi dodać nowy wydatek do systemu i pracuje wten sam sposób jak "Add income".
   
     ## Fumkcja budżet saldo bieżącego miesiąca (wybór nr. 3)
+  
+  ### View current month's balance
   
   ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c7e3aa5a-61fb-4698-bad5-1a010649c8bd)
 
@@ -229,6 +235,8 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
     ## Fumkcja zobacz budżet wybranego okresu (wybór nr. 4)
   
+  ### View balance of the selected period
+  
   ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/efc3be6e-9470-413b-959d-a6aa9c95cc29)
 
 - Funkcja "viewBalanceOfSelectedPeriod" służy do wyświetlania bilansu dla wybranego okresu. Użytkownik jest proszony o podanie daty początkowej i daty końcowej okresu, który chce przeglądać. Następnie funkcja oblicza minimalną i maksymalną datę dla tego okresu.
@@ -236,30 +244,74 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
   
   ## Fumkcja wyświetl wszystkie dochody/wydatki (wybór nr. 5/6)
   
-  View all incomes:
-Funkcja "viewAllIncomes" służy do wyświetlania wszystkich przychodów. Na początku funkcja wywołuje funkcję "viewIncome", przekazując jej korzeń drzewa binarnego "incomesBinaryTree". Następnie funkcja czeka na naciśnięcie dowolnego klawisza przez użytkownika, aby kontynuować.
+### View all incomes/expenses:
+  
+  - Zlanczam te dwie opcje bo pracują jednakowo.
+  
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/26c3e90b-6f09-46fd-bbdd-0a5785a55866)
 
-Funkcja "copyBinaryTree" kopiuje drzewo binarne, które jest przekazywane jako argument "node". Tworzony jest nowy węzeł o takiej samej wartości, a następnie rekurencyjnie kopiowane są lewe i prawe poddrzewa.
+- Funkcja "viewAllIncomes" służy do wyświetlania wszystkich przychodów. Na początku funkcja wywołuje funkcję "viewIncome", przekazując jej korzeń drzewa binarnego "incomesBinaryTree". 
 
-Funkcja "deleteBinaryTree" służy do usuwania drzewa binarnego, które jest przekazywane jako argument "node". Rekurencyjnie usuwane są lewe i prawe poddrzewa, a następnie usuwany jest węzeł.
+- Funkcja "copyBinaryTree" kopiuje drzewo binarne, które jest przekazywane jako argument "node". Tworzony jest nowy węzeł o takiej samej wartości, a następnie rekurencyjnie kopiowane są lewe i prawe poddrzewa.   Jest używana dlatego aby uniknąć modyfikowania oryginalnego drzewa, tworzona jest kopia, na której wykonywane są te operacje.
 
-Funkcja "viewIncome" inicjuje wyświetlanie przychodów. Na początku tworzy kopię oryginalnego drzewa przychodów za pomocą funkcji "copyBinaryTree". Następnie wyświetla użytkownikowi opcje sortowania przychodów, takie jak sortowanie według daty (najnowsze lub najstarsze) lub sortowanie według ceny (najtańsze lub najdroższe). Wybór użytkownika jest przechowywany w zmiennej "choice".
+- Funkcja "deleteBinaryTree" służy do usuwania drzewa binarnego. Rekurencyjnie usuwane są lewe i prawe poddrzewa, a następnie usuwany jest węzeł.
 
-W zależności od wyboru użytkownika, wyświetlane są przychody w określonej kolejności sortowania. Funkcje takie jak "viewIncomeByDateNewest", "viewIncomeByDateOldest", "sortIncomesByAmount", "displayIncomesByAmount" i "viewIncomeByPriceMostExpensive" są wywoływane w zależności od wyboru użytkownika.
+- Funkcja "viewIncome" inicjuje wyświetlanie przychodów. Na początku tworzy kopię oryginalnego drzewa przychodów za pomocą funkcji "copyBinaryTree". Następnie wyświetla użytkownikowi opcje sortowania przychodów, takie jak sortowanie według daty (najnowsze lub najstarsze) lub sortowanie według ceny (najtańsze lub najdroższe). Wybór użytkownika jest przechowywany w zmiennej "choice".
 
-Funkcje "viewIncomeByDateNewest" i "viewIncomeByDateOldest" służą do wyświetlania przychodów posortowanych według daty, z najnowszymi lub najstarszymi na początku. Wykorzystują one stos do przechodzenia drzewa binarnego w odwrotnej kolejności (prawo, korzeń, lewo) i przechowują posortowane przychody w kontenerze "sortedIncomes". Następnie posortowane przychody są wyświetlane na ekranie.
+- W zależności od wyboru użytkownika, wyświetlane są przychody w określonej kolejności sortowania. Funkcje takie jak "viewIncomeByDateNewest", "viewIncomeByDateOldest", "sortIncomesByAmount", "displayIncomesByAmount" i "viewIncomeByPriceMostExpensive" są wywoływane w zależności od wyboru użytkownika.
 
-Funkcja "countNodes" służy do zliczania liczby węzłów w drzewie binarnym, które jest przekazywane jako argument "node". Rekurencyjnie obliczana jest liczba węzłów w lewym i prawym poddrzewie, a następnie dodawana jest jednostka za aktualny węzeł.
+- Funkcje "viewIncomeByDateNewest" i "viewIncomeByDateOldest" służą do wyświetlania przychodów posortowanych według daty, z najnowszymi lub najstarszymi na początku. Wykorzystują one stos do przechodzenia drzewa binarnego w odwrotnej kolejności (prawo, korzeń, lewo) i przechowują posortowane przychody w kontenerze "sortedIncomes"
 
-Funkcja "sortIncomesByAmount" sortuje przychody według ceny, wykorzystując algorytm sortowania bąbelkowego. Najpierw obliczana jest liczba węzłów w poddrzewie, a następnie porównywane są sąsiednie węzły i zamieniane, jeśli cena jednego jest większa od drugiego. Ta procedura jest powtarzana dla wszystkich węzłów.
+- Funkcja "countNodes" służy do zliczania liczby węzłów w drzewie binarnym. Rekurencyjnie obliczana jest liczba węzłów w lewym i prawym poddrzewie, a następnie dodawana jest jednostka za aktualny węzeł.
 
-Funkcja "displayIncomesByAmount" wyświetla przychody według ceny, korzystając z porządku inorder (lewo, korzeń, prawo). Rekurencyjnie wywoływana jest dla lewego poddrzewa, wyświetlany jest aktualny przychód, a następnie rekurencyjnie wywoływana jest dla prawego poddrzewa.
+- Funkcja "sortIncomesByAmount" sortuje przychody według ceny, wykorzystując algorytm sortowania bąbelkowego. Najpierw obliczana jest liczba węzłów w poddrzewie, a następnie porównywane są sąsiednie węzły i zamieniane, jeśli cena jednego jest większa od drugiego. Ta procedura jest powtarzana dla wszystkich węzłów.
 
-Funkcja "viewIncomeByPriceCheapest" sortuje przychody według ceny od najtańszego do najdroższego, wywołując funkcję "sortIncomesByAmount" i "displayIncomesByAmount" dla korzenia drzewa przychodów.
+- Funkcja "displayIncomesByAmount" wyświetla przychody według ceny, korzystając z porządku inorder (lewo, korzeń, prawo). Rekurencyjnie wywoływana jest dla lewego poddrzewa, wyświetlany jest aktualny przychód, a następnie rekurencyjnie wywoływana jest dla prawego poddrzewa.  
 
-Funkcja "viewIncomeByPriceMostExpensive" wyświetla przychody według ceny od najdroższego do najtańszego. Wykorzystuje ona przechodzenie drzewa binarnego w kolejności prawo, korzeń, lewo, aby wyświetlić przychody w odpowiedniej kolejności.
+  
+    ## Fumkcja Szukaj w budżecie (wybór nr. 7)
+  
+  ### Search in budget
+  
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/ef741b7b-7b99-476e-a517-2c7a573fa1e1)
+  
+ - Funkcje searchIncomesAndExpenses, searchIncomeByItemRecursive i searchExpenseByItemRecursive służą do wyszukiwania przychodów i wydatków na podstawie podanego słowa kluczowego.
 
-Funkcja "displayIncome" wyświetla informacje o pojedynczym przychodzie. Wyświetlane są takie dane jak ID przychodu, ID użytkownika, data, przedmiot i kwota.
-  Aby uniknąć modyfikowania oryginalnego drzewa, tworzona jest kopia, na której wykonywane są te operacje.
- 
+- Funkcja searchIncomesAndExpenses inicjalizuje proces wyszukiwania. Funkcja wywołuje dwie inne funkcje rekurencyjne: searchIncomeByItemRecursive i searchExpenseByItemRecursive. 
+
+- Funkcje searchIncomeByItemRecursive i searchExpenseByItemRecursive rekurencyjnie przeszukują drzewa binarne przychodów i wydatków w poszukiwaniu węzłów, których element "item" jest zgodny z podanym słowem kluczowym. Jeśli takie węzły są znalezione, wywoływana jest funkcja displayIncome lub displayExpense, która wyświetla szczegóły dotyczące znalezionego przychodu lub wydatku. Parametr resultsFound jest używany do śledzenia, czy znaleziono jakiekolwiek wyniki.
+
+ ## Fumkcja Generuj raport (wybór nr. 8)
+  
+  ### Generate report
+  
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/a3d1af62-022a-4c03-9e76-b3d50177422c)
+
+ -Funkcje generateMonthlyIncomeChart, countMonthlyIncomes i countMonthlyExpenses służą do generowania raportu miesięcznego dotyczącego budżetu.
+
+- Funkcja generateMonthlyIncomeChart inicjalizuje proces generowania raportu. Na początku użytkownik jest proszony o podanie daty początkowej i końcowej okresu, który chce przeglądać. Następnie funkcja wywołuje inne funkcje, takie jak viewSelectedIncomes, viewSelectedExpenses, calculateTotalIncome i calculateTotalExpense, które wyświetlają wybrane przychody i wydatki oraz obliczają łączny przychód i wydatek w określonym okresie.
+
+- Następnie funkcja generuje wykres miesięcznych budżetu w określonym okresie. Tworzy wektor monthlyIncomes, w którym przechowywane są kwoty przychodów dla każdego miesiąca. Następnie funkcja iteruje po węzłach przychodów i sumuje kwoty przychodów dla każdego miesiąca. Wykres jest prezentowany za pomocą znaków "#" i "---" w zależności od kwoty przychodów.
+
+- Na koniec funkcja wyświetla podsumowanie wybranego okresu, zawierające łączny przychód, łączny wydatek i budżetu miesiąca.
+
+- Funkcje countMonthlyIncomes i countMonthlyExpenses są funkcjami pomocniczymi, które rekurencyjnie przechodzą przez drzewa binarne przychodów i wydatków, obliczając sumy przychodów i wydatków dla poszczególnych miesięcy w określonym okresie. Znalezione kwoty są przechowywane w wektorach monthlyIncomes i monthlyExpenses.
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
