@@ -203,21 +203,29 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
    ### Glówna menu projektu Personal Budget Managment
 ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/2ed0f216-047a-4f2b-a09d-96b7e755ad7d)
   
-  ## Fumkcja Add Income (wybór nr. 1)
+  ## Fumkcja Dodać dochód (wybór nr. 1)
   
 ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c9a0d5d3-443a-4722-842b-fd823d8b4c6f)
 
   - Opcja "Add income" pozwala użytkownikowi dodać nowy przychód do systemu. Po wybraniu tej opcji, użytkownik jest prowadzony przez proces wprowadzania danych dotyczących przychodu, takich jak data, przedmiot i kwota, przepisane automatychnie do kądego dochodu jest identyfikator użytkownika, i identyfikator dochodu. Następnie funkcja wywołuje funkcję "addIncomeToXmlFile" w celu dodania przychodu do pliku XML. Jeśli dodawanie przebiegnie pomyślnie, wyświetlany jest komunikat potwierdzający. Po zakończeniu użytkownik jest proszony o naciśnięcie dowolnego klawisza w celu kontynuacji.
   
-  ## Fumkcja Add Expense (wybór nr. 2)
+  ## Fumkcja Dodać wydatek (wybór nr. 2)
 
   ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/be705b86-d220-4382-8f20-1caf45bc4c22)
 
   - Opcja "Add expense" pozwala użytkownikowi dodać nowy wydatek do systemu i pracuje wten sam sposób jak "Add income".
   
+    ## Fumkcja Zobacz saldo bieżącego miesiąca (wybór nr. 3)
   
-  
-  
+  ![image](https://github.com/tomasczerniawski/Project-Personal-budget-management/assets/115027239/c7e3aa5a-61fb-4698-bad5-1a010649c8bd)
+
+ - Funkcja "viewCurrentMonthBalance" służy do wyświetlania bilansu bieżącego miesiąca. Najpierw oblicza minimalną i maksymalną datę dla bieżącego miesiąca na podstawie aktualnej daty systemowej. Wyświetlane są informacje dotyczące przychodów i wydatków bieżącego miesiąca oraz podsumowanie.
+
+- Funkcja wywołuje funkcję "viewSelectedIncomes" w celu wyświetlenia przychodów dla określonego zakresu dat (od minDate do maxDate) z wykorzystaniem struktury drzewa binarnego. Następnie wywoływana jest funkcja "viewSelectedExpenses" dla wyświetlenia wydatków bieżącego miesiąca.
+
+- Funkcja viewSelectedIncomes" przechodzi przez drzewo binarne przychodów w porządku inorder przy użyciu stosu. Dla każdego węzła, sprawdzane jest, czy data przychodu mieści się w określonym zakresie dat (minDate do maxDate). Jeśli tak, to szczegóły przychodu (np. nazwa i kwota) są wyświetlane na konsoli.
+
+- Funkcja kończy działanie, gdy przejdzie przez wszystkie węzły drzewa dochodów i wydatków w ten sam sposób lub gdy stos jest pusty.
   
   
   
