@@ -211,7 +211,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
   - Opcja "Add income" pozwala użytkownikowi dodać nowy przychód do systemu. Po wybraniu tej opcji, użytkownik jest prowadzony przez proces wprowadzania danych dotyczących przychodu, takich jak data, przedmiot i kwota, przepisane automatychnie do kądego dochodu jest identyfikator użytkownika, i identyfikator dochodu. Następnie funkcja wywołuje funkcję "addIncomeToXmlFile" w celu dodania przychodu do pliku XML. Jeśli dodawanie przebiegnie pomyślnie, wyświetlany jest komunikat potwierdzający. Po zakończeniu użytkownik jest proszony o naciśnięcie dowolnego klawisza w celu kontynuacji.
   
-## Fumkcja Dodać wydatek (wybór nr. 2)
+## Funkcja Dodać wydatek (wybór nr. 2)
 
 ### Add expense
   
@@ -233,7 +233,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Funkcja kończy działanie, gdy przejdzie przez wszystkie węzły drzewa dochodów i wydatków w ten sam sposób lub gdy stos jest pusty.
   
-## Fumkcja zobacz budżet wybranego okresu (wybór nr. 4)
+## Funkcja zobacz budżet wybranego okresu (wybór nr. 4)
   
 ### View balance of the selected period
   
@@ -242,7 +242,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 - Funkcja "viewBalanceOfSelectedPeriod" służy do wyświetlania bilansu dla wybranego okresu. Użytkownik jest proszony o podanie daty początkowej i daty końcowej okresu, który chce przeglądać. Następnie funkcja oblicza minimalną i maksymalną datę dla tego okresu.
 - Pracuje wten sam sposób ja funkcja poprzednia tyko użytkownik tu podaje okres przepatrywanego budżetu
   
-## Fumkcja wyświetl wszystkie dochody/wydatki (wybór nr. 5/6)
+## Funkcja wyświetl wszystkie dochody/wydatki (wybór nr. 5/6)
   
 ### View all incomes/expenses:
   
@@ -269,7 +269,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 - Funkcja "displayIncomesByAmount" wyświetla przychody według ceny, korzystając z porządku inorder (lewo, korzeń, prawo). Rekurencyjnie wywoływana jest dla lewego poddrzewa, wyświetlany jest aktualny przychód, a następnie rekurencyjnie wywoływana jest dla prawego poddrzewa.  
 
   
-## Fumkcja Szukaj w budżecie (wybór nr. 7)
+## Funkcja Szukaj w budżecie (wybór nr. 7)
   
 ### Search in budget
   
@@ -281,7 +281,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Funkcje searchIncomeByItemRecursive i searchExpenseByItemRecursive rekurencyjnie przeszukują drzewa binarne przychodów i wydatków w poszukiwaniu węzłów, których element "item" jest zgodny z podanym słowem kluczowym. Jeśli takie węzły są znalezione, wywoływana jest funkcja displayIncome lub displayExpense, która wyświetla szczegóły dotyczące znalezionego przychodu lub wydatku. Parametr resultsFound jest używany do śledzenia, czy znaleziono jakiekolwiek wyniki.
 
-## Fumkcja Generuj raport (wybór nr. 8)
+## Funkcja Generuj raport (wybór nr. 8)
   
 ### Generate report
   
@@ -297,7 +297,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
 - Funkcje countMonthlyIncomes i countMonthlyExpenses są funkcjami pomocniczymi, które rekurencyjnie przechodzą przez drzewa binarne przychodów i wydatków, obliczając sumy przychodów i wydatków dla poszczególnych miesięcy w określonym okresie. Znalezione kwoty są przechowywane w wektorach monthlyIncomes i monthlyExpenses.
 
-## FumkcjaGeneruj losowy budżet (wybór nr. 9)
+## Funkcja Generuj losowy budżet (wybór nr. 9)
   
 ### Generate random budget
   
