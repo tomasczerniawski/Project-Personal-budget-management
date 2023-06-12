@@ -219,7 +219,7 @@ Klasa `BinaryTree` reprezentuje drzewo binarne. Posiada pole
 
   - Opcja "Add expense" pozwala użytkownikowi dodać nowy wydatek do systemu i pracuje wten sam sposób jak "Add income".
   
-## Fumkcja budżet saldo bieżącego miesiąca (wybór nr. 3)
+## Funkcja zobacz budżet bieżącego miesiąca (wybór nr. 3)
   
 ### View current month's balance
   
