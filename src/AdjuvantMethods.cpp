@@ -8,7 +8,7 @@ char AdjuvantMethods::getChar()
     {
         getline(cin, choice);
 
-        if (choice.length())
+        if (choice.length()  == 1)
         {
             return choice[0];
         }
