@@ -1,4 +1,4 @@
-﻿#include "FinanceManager.h"
+#include "FinanceManager.h"
 #include <stack>
 #include <iostream>
 #include <vector>
@@ -75,7 +75,10 @@ void FinanceManager::addExpense()
    
     expensesBinaryTree.insertNode(expense);
     isExpenseAdded = expensesFile.addExpenseToXmlFile(expense, date);
+
+    if(isExpenseAdded)
     cout << endl << "The expense has been successfully added." << endl;
+
     system("pause");
 }
 
@@ -96,13 +99,25 @@ Expense FinanceManager::provideNewExpenseData()
     cout << "Enter amount: ";
     amount = AdjuvantMethods::getFloatNumber();
 
-    expense.setExpenseId(expensesFile.getLastExpenseId() + 1);
+    expense.setExpenseId(calculateExpenseId(expensesBinaryTree.getRoot(), 0) + 1);;
     expense.setUserId(CURRENT_USER_ID);
     expense.setDate(date.getDateInteger());
     expense.setItem(item);
     expense.setAmount(amount);
 
     return expense;
+}
+
+int FinanceManager::calculateExpenseId(BinaryTreeNode<Expense>* node, int currentMaxId) {
+    if (node == nullptr) {
+        return currentMaxId;
+    }
+
+    int maxId = max(node->data.getEntryId(), currentMaxId);
+    maxId = calculateExpenseId(node->left, maxId);
+    maxId = calculateExpenseId(node->right, maxId);
+
+    return maxId;
 }
 
 //<-------------->\\
@@ -206,7 +221,7 @@ void FinanceManager::viewIncomeByDateNewest(BinaryTreeNode<Income>* node) {
 
     // Traverse the tree in reverse order (right, root, left) and store incomes in a stack
     while (current != nullptr || !stack.empty()) {
-        // Reach the rightmost node of the current subtree
+  
         while (current != nullptr) {
             stack.push(current);
             current = current->right;
@@ -216,10 +231,8 @@ void FinanceManager::viewIncomeByDateNewest(BinaryTreeNode<Income>* node) {
         current = stack.top();
         stack.pop();
 
-        // Store the income in a container
         sortedIncomes.push_back(current->data);
 
-        // Move to the left subtree
         current = current->left;
     }
 
@@ -228,12 +241,10 @@ void FinanceManager::viewIncomeByDateNewest(BinaryTreeNode<Income>* node) {
         return income1.getDate() > income2.getDate();
         });
 
-    // Display the sorted incomes
     for (Income& income : sortedIncomes) {
         displayIncome(income);
     }
 
-    // Clear the container
     sortedIncomes.clear();
 }
 
@@ -297,7 +308,7 @@ void FinanceManager::sortIncomesByAmount(BinaryTreeNode<Income>* node) {
         // Traverse the subtree and compare adjacent nodes by amount
         while (current->right != nullptr) {
             if (current->data.getAmount() > current->right->data.getAmount()) {
-                // Swap the incomes
+           
                 Income temp = current->data;
                 current->data = current->right->data;
                 current->right->data = temp;
@@ -400,12 +411,12 @@ void FinanceManager::viewExpense(BinaryTreeNode<Expense>* node) {
         case '1':
             system("cls");
             cout << "Sorting by date (newest first):" << endl;
-            viewExpenseByDateNewest(originalTree); // Pass the original tree instead of the modified tree
+            viewExpenseByDateNewest(originalTree); 
             break;
         case '2':
             system("cls");
             cout << "Sorting by date (oldest first):" << endl;
-            viewExpenseByDateOldest(originalTree); // Pass the original tree instead of the modified tree
+            viewExpenseByDateOldest(originalTree);
             break;
         case '3':
             system("cls");
@@ -446,17 +457,17 @@ void FinanceManager::viewExpenseByDateNewest(BinaryTreeNode<Expense>* node) {
 
     // Traverse the tree in reverse order (right, root, left) and store expenses in a stack
     while (current != nullptr || !stack.empty()) {
-        // Reach the rightmost node of the current subtree
+      
         while (current != nullptr) {
             stack.push(current);
             current = current->right;
         }
 
-        // Pop the node from the stack
+       
         current = stack.top();
         stack.pop();
 
-        // Store the expenses in a container
+  
         sortedExpense.push_back(current->data);
 
         // Move to the left subtree
@@ -468,12 +479,12 @@ void FinanceManager::viewExpenseByDateNewest(BinaryTreeNode<Expense>* node) {
         return expense1.getDate() > expense2.getDate();
         });
 
-    // Display the sorted expenses
+
     for (Expense& expense : sortedExpense) {
         displayExpense(expense);
     }
 
-    // Clear the container
+   
     sortedExpense.clear();
 }
 
@@ -482,7 +493,6 @@ void FinanceManager::viewExpenseByDateOldest(BinaryTreeNode<Expense>* node) {
         return;
     }
 
-    // Create a container to store the expenses
     std::vector<Expense> sortedExpense;
 
     // Traverse the tree in order (left, root, right) and add expenses to the container
@@ -508,7 +518,7 @@ void FinanceManager::viewExpenseByDateOldest(BinaryTreeNode<Expense>* node) {
         return expense1.getDate() < expense2.getDate();
         });
 
-    // Display the sorted expenses
+ 
     for (Expense& Expense : sortedExpense) {
         displayExpense(Expense);
     }
@@ -527,7 +537,7 @@ void FinanceManager::sortExpenseByAmount(BinaryTreeNode<Expense>* node) {
         return;
     }
 
-    // Count the number of nodes in the subtree
+   
     int count = countNodes(node);
 
     // Perform bubble sort
@@ -610,7 +620,7 @@ void FinanceManager::viewSelectedIncomes(int minDate, int maxDate, const BinaryT
         stack.pop();
 
         if (current->data.getDate() >= minDate && current->data.getDate() <= maxDate) {
-            // Display the selected income (e.g., print its details to the console)
+
             cout << current->data.getItem() << " - " << current->data.getAmount() << " $" << endl;
         }
 
@@ -639,7 +649,7 @@ void FinanceManager::viewSelectedExpenses(int minDate, int maxDate, BinaryTree<E
         stack.pop();
 
         if (current->data.getDate() >= minDate && current->data.getDate() <= maxDate) {
-            // Display the selected expense (e.g., print its details to the console)
+ 
             cout << current->data.getItem() << " - " << current->data.getAmount() << " $" << endl;
         }
 
@@ -783,7 +793,7 @@ void FinanceManager::searchIncomeByItemRecursive(BinaryTreeNode<Income>* node, c
 
     if (node->data.getItem() == keyword) {
         displayIncome(node->data);
-        // Output other income details as needed
+        // Output other income details
         resultsFound = true;
     }
 
@@ -809,6 +819,9 @@ void FinanceManager::searchExpenseByItemRecursive(BinaryTreeNode<Expense>* node,
 
 
 
+//<-------------->\\
+//Generate monthly chart function
+//<-------------->\\
 
 
 
@@ -850,13 +863,12 @@ void FinanceManager::generateMonthlyIncomeChart()
     cout << ">>>   SELECTED PERIOD SUMMARY   <<<\n" << endl;
     cout << "\nTotal income:     " << totalIncome << " $" << endl;
     cout << "Total expense:    " << totalExpense << " $" << endl;
-    cout << "Month Balance:    " << std::showpos << totalIncome - totalExpense << " $" << std::noshowpos << endl << endl;
+    cout << "Month Balance:    " << std::showpos << totalIncome - totalExpense << " $" << std::noshowpos << endl << endl << endl;
 
-
+    cout << "EVERY LINE OF ### IS 100 $ "  << endl << endl << endl << endl;
     // Calculate monthly incomes within the given period
-    std::vector<int> monthlyIncomes(12 * (maxDate / 10000 - minDate / 10000 + 1), 0); // Vector to store the income amount for each month
+    std::vector<int> monthlyIncomes(12 * (maxDate / 10000 - minDate / 10000 + 1), 0); 
 
-    // Iterate over the income nodes and sum the income amount for each month
     countMonthlyIncomes(incomesBinaryTree.getRoot(), minDate, maxDate, monthlyIncomes);
 
     std::cout << ">>>   SELECTED PERIOD INCOME SUMMARY   <<<\n" << std::endl;
@@ -866,18 +878,18 @@ void FinanceManager::generateMonthlyIncomeChart()
     int startYear = minDate / 10000;
     int endYear = maxDate / 10000;
 
-    bool hasIncomes = false; // Flag to track if there are any incomes in the selected period
+    bool hasIncomes = false;
 
-    int maxIncomeAmount = *std::max_element(monthlyIncomes.begin(), monthlyIncomes.end()); // Get the maximum income amount
+    int maxIncomeAmount = *std::max_element(monthlyIncomes.begin(), monthlyIncomes.end());
 
     for (int year = endYear; year >= startYear; year--)
     {
-        std::cout << ">>>   INCOME SUMMARY " << year << "   <<<\n" << std::endl; // Print the new line with the income summary for the current year
+        std::cout << ">>>   INCOME SUMMARY " << year << "   <<<\n" << std::endl; 
 
-        // Print the "#" representing income and "---" representing month labels in the same loop
+     
         for (int i = maxIncomeAmount; i >= 100; i -= 100)
         {
-            bool monthHasIncomes = false; // Flag to track if the month has any incomes
+            bool monthHasIncomes = false; 
 
             for (int month = 1; month <= 12; month++)
             {
@@ -894,7 +906,7 @@ void FinanceManager::generateMonthlyIncomeChart()
                     }
                     else
                     {
-                        std::cout << "    "; // Print empty space if no income or below the current height level
+                        std::cout << "    ";
                     }
                 }
             }
@@ -928,24 +940,23 @@ void FinanceManager::generateMonthlyIncomeChart()
         std::cout << "No incomes found in the selected period." << std::endl;
     }
 
-    // Calculate monthly expenses within the given period
-    std::vector<int> monthlyExpenses(12 * (maxDate / 10000 - minDate / 10000 + 1), 0); // Vector to store the expense amount for each month
+   
+    std::vector<int> monthlyExpenses(12 * (maxDate / 10000 - minDate / 10000 + 1), 0); 
 
-    // Iterate over the expense nodes and sum the expense amount for each month
     countMonthlyExpenses(expensesBinaryTree.getRoot(), minDate, maxDate, monthlyExpenses);
 
     std::cout << ">>>   SELECTED PERIOD EXPENSE SUMMARY   <<<\n" << std::endl;
 
-    int maxExpenseAmount = *std::max_element(monthlyExpenses.begin(), monthlyExpenses.end()); // Get the maximum expense amount
+    int maxExpenseAmount = *std::max_element(monthlyExpenses.begin(), monthlyExpenses.end()); 
 
     for (int year = endYear; year >= startYear; year--)
     {
-        std::cout << ">>>   EXPENSE SUMMARY " << year << "   <<<\n" << std::endl; // Print the new line with the expense summary for the current year
+        std::cout << ">>>   EXPENSE SUMMARY " << year << "   <<<\n" << std::endl; 
 
         // Print the "#" representing expense and "---" representing month labels in the same loop
         for (int i = maxExpenseAmount; i >= 100; i -= 100)
         {
-            bool monthHasExpenses = false; // Flag to track if the month has any expenses
+            bool monthHasExpenses = false; 
 
             for (int month = 1; month <= 12; month++)
             {
@@ -961,7 +972,7 @@ void FinanceManager::generateMonthlyIncomeChart()
                     }
                     else
                     {
-                        std::cout << "    "; // Print empty space if no expense or below the current height level
+                        std::cout << "    ";
                     }
                 }
              
@@ -1012,7 +1023,7 @@ void FinanceManager::countMonthlyIncomes(BinaryTreeNode<Income>* node, int minDa
     countMonthlyIncomes(node->left, minDate, maxDate, monthlyIncomes);
 
     int incomeDate = node->data.getDate();
-    std::string incomeDateStr = std::to_string(incomeDate); // Convert the date integer to string
+    std::string incomeDateStr = std::to_string(incomeDate); 
 
     int year = std::stoi(incomeDateStr.substr(0, 4)); // Extract the year from the date string
     int month = std::stoi(incomeDateStr.substr(4, 2)); // Extract the month from the date string
@@ -1053,6 +1064,10 @@ void FinanceManager::countMonthlyExpenses(BinaryTreeNode<Expense>* node, int min
 }
 
 
+
+//<-------------->\\
+//Generate random Budzet function
+//<-------------->\\
 
 
 
@@ -1156,7 +1171,3 @@ void FinanceManager::insertRandomIncomeToTree() {
         }
     }
 }
-
-
-
-
