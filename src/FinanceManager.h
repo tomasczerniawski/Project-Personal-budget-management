@@ -73,6 +73,8 @@ class FinanceManager
 
     void viewSelectedIncomes(int minDate, int maxDate, const BinaryTree<Income>& incomesBinaryTree);
     void viewSelectedExpenses(int minDate, int maxDate, BinaryTree<Expense>& expensesBinaryTree);
+
+
     float calculateTotalIncome(BinaryTreeNode<Income>* node, int minDate, int maxDate);
     float calculateTotalExpense(BinaryTreeNode<Expense>* node, int minDate, int maxDate);
     
@@ -92,13 +94,23 @@ public:
         totalExpense = calculateTotalExpense(expensesBinaryTree.getRoot(), minDate, maxDate);
     }
 
+ //<-------------->\\
+ //functions for adding
+//<-------------->\\
+
     void addIncome();
     void addExpense();
+
 
     void viewAllIncomes();
     void viewAllExpenses();
 
     int calculateIncomeId(BinaryTreeNode<Income>* node, int currentMaxId);
+    int calculateExpenseId(BinaryTreeNode<Expense>* node, int currentMaxId);
+
+//<-------------->\\
+ //functions for Searching
+//<-------------->\\
 
     void searchIncomesAndExpenses();
     void searchIncomeByItemRecursive(BinaryTreeNode<Income>* node, const string& keyword, bool& resultsFound);
