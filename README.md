@@ -39,7 +39,7 @@ Skompiluj program za pomocą wybranego kompilatora.
 
 Uruchom program i zacznij zarządzać swoim budżetem osobistym!
 
-Albo także możno PMB.exe file przeslac aby urucho,ic system na Windowsie
+Albo także możno PMB.exe file przeslac aby uruchomic system na Windowsie
 
 Wten moment na Linuxie i os system niedziala
 
